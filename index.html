@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Franck Soluciones Inform&aacute;ticas &mdash; Ayudamos a negocios y marcas personales a conseguir m&aacute;s clientes online. Sitios web, tiendas online y sistemas a medida. Sin costos fijos mensuales.">
+    <meta name="keywords" content="desarrollo web, sitios web para pymes, dise&ntilde;o web, paginas web, desarrollo de software, landing pages, ecommerce, sistemas a medida, programador freelance, Franck Soluciones, desarrollo web argentina, programador mendoza, software factory argentina">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Franck Soluciones Inform&aacute;ticas">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://francksoluciones.netlify.app/">
+    <meta property="og:title" content="Franck Soluciones | M&aacute;s clientes para tu negocio">
+    <meta property="og:description" content="Ayudamos a negocios y marcas personales a conseguir m&aacute;s clientes online. Sitios web, tiendas y sistemas a medida.">
+    <meta property="og:image" content="img/logo-franck.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title data-i18n="meta.title">Franck Soluciones | M&aacute;s clientes para tu negocio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-franck.png">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <img src="img/logo-franck.png" alt="Franck Soluciones Logo" class="logo-img">
+                <span class="brand-text">Franck<span class="accent">.Dev</span></span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero"        class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                    <li><a href="#servicios"   class="nav-link" data-i18n="nav.services">Servicios</a></li>
+                    <li><a href="#portfolio"   class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="#testimonios" class="nav-link" data-i18n="nav.testimonials">Testimonios</a></li>
+                    <li><a href="#contacto"    class="btn-primary" data-i18n="nav.cta">Conseguir Clientes</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><i class="ph ph-x"></i></div>
+            </nav>
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="ph ph-moon" id="theme-icon"></i>
+                </button>
+                <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
+                    <span id="lang-label">EN</span>
+                </button>
+                <div class="nav-toggle" id="nav-toggle"><i class="ph ph-list"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="hero section hidden-section">
+            <div class="container hero-content">
+                <span class="badge" data-i18n="hero.badge">Presencia digital que trae resultados</span>
+                <h1 class="hero-title" data-i18n="hero.title">
+                    &iquest;Tu negocio todav&iacute;a<br>
+                    <span class="gradient-text">no aparece online?</span>
+                </h1>
+                <p class="hero-description" data-i18n="hero.desc">
+                    Ayudo a peque&ntilde;os negocios y marcas personales a conseguir m&aacute;s clientes
+                    con una presencia digital profesional.<br>
+                    Sin costos fijos mensuales. El c&oacute;digo es 100% tuyo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios"
+                       target="_blank" class="btn-whatsapp" data-i18n="hero.cta1">
+                        <i class="ph ph-whatsapp-logo"></i> Quiero m&aacute;s clientes
+                    </a>
+                    <a href="#servicios" class="btn-outline" data-i18n="hero.cta2">Ver soluciones</a>
+                </div>
+            </div>
+            <div class="glow-effect"></div>
+        </section>
+
+        <!-- STATS BAR -->
+        <section class="stats-bar hidden-section">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label" data-i18n="stats.projects">Proyectos en producci&oacute;n</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label" data-i18n="stats.ownership">C&oacute;digo tuyo, sin alquiler</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">15 d&iacute;as</span>
+                    <span class="stat-label" data-i18n="stats.delivery">Tiempo m&aacute;ximo de entrega</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">$0</span>
+                    <span class="stat-label" data-i18n="stats.fixed">Costos fijos mensuales</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section hidden-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="services.title">
+                    Soluciones que <span class="accent">consiguen clientes</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">
+                    No vendo plantillas. Construyo activos digitales que funcionan.
+                </p>
+                <div class="packages-grid">
+
+                    <!-- Basico -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="icon-box cian"><i class="ph ph-rocket-launch"></i></div>
+                            <h3 data-i18n="pkg1.name">Presencia R&aacute;pida</h3>
+                            <div class="package-price">
+                                <span class="price-from" data-i18n="pkg.from">Desde</span>
+                                <span class="price-amount">USD 100</span>
+                            </div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg1.f1">Landing page profesional</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg1.f2">Bot&oacute;n de WhatsApp integrado</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg1.f3">Dise&ntilde;o Mobile First</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg1.f4">Entrega en 3&ndash;7 d&iacute;as h&aacute;biles</span></li>
+                        </ul>
+                        <p class="package-ideal">
+                            <i class="ph ph-target"></i>
+                            <span data-i18n="pkg1.ideal">Ideal para negocios sin presencia web</span>
+                        </p>
+                        <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20me%20interesa%20el%20paquete%20Presencia%20R%C3%A1pida"
+                           target="_blank" class="btn-package" data-i18n="pkg.cta">Consultar ahora &rarr;</a>
+                    </div>
+
+                    <!-- Profesional -->
+                    <div class="package-card featured">
+                        <div class="featured-badge" data-i18n="pkg.popular">M&aacute;s elegido</div>
+                        <div class="package-header">
+                            <div class="icon-box violet"><i class="ph ph-globe"></i></div>
+                            <h3 data-i18n="pkg2.name">Sitio Profesional</h3>
+                            <div class="package-price">
+                                <span class="price-from" data-i18n="pkg.from">Desde</span>
+                                <span class="price-amount">USD 250</span>
+                            </div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg2.f1">Sitio web completo (multi-secci&oacute;n)</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg2.f2">Formulario de contacto</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg2.f3">SEO b&aacute;sico incluido</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg2.f4">Dise&ntilde;o personalizado</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg2.f5">Entrega en 7&ndash;15 d&iacute;as h&aacute;biles</span></li>
+                        </ul>
+                        <p class="package-ideal">
+                            <i class="ph ph-target"></i>
+                            <span data-i18n="pkg2.ideal">Ideal para marcas que quieren crecer</span>
+                        </p>
+                        <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20me%20interesa%20el%20paquete%20Sitio%20Profesional"
+                           target="_blank" class="btn-package featured-btn" data-i18n="pkg.cta">Consultar ahora &rarr;</a>
+                    </div>
+
+                    <!-- Avanzado -->
+                    <div class="package-card">
+                        <div class="package-header">
+                            <div class="icon-box gold"><i class="ph ph-brain"></i></div>
+                            <h3 data-i18n="pkg3.name">Soluci&oacute;n Avanzada</h3>
+                            <div class="package-price">
+                                <span class="price-from" data-i18n="pkg.from">Desde</span>
+                                <span class="price-amount">USD 500</span>
+                            </div>
+                        </div>
+                        <ul class="feature-list">
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg3.f1">E-commerce o sistema a medida</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg3.f2">Automatizaciones e integraciones</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg3.f3">Chatbots e IA aplicada</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg3.f4">Soporte post-entrega incluido</span></li>
+                            <li><i class="ph ph-check"></i><span data-i18n="pkg3.f5">Tiempos seg&uacute;n an&aacute;lisis del proyecto</span></li>
+                        </ul>
+                        <p class="package-ideal">
+                            <i class="ph ph-target"></i>
+                            <span data-i18n="pkg3.ideal">Ideal para negocios que quieren escalar</span>
+                        </p>
+                        <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20me%20interesa%20una%20Soluci%C3%B3n%20Avanzada"
+                           target="_blank" class="btn-package" data-i18n="pkg.cta">Consultar ahora &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section class="section bg-alt hidden-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="how.title">
+                    &iquest;C&oacute;mo <span class="accent">funciona?</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="how.subtitle">Simple, r&aacute;pido y sin sorpresas.</p>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">01</div>
+                        <i class="ph ph-chat-circle-text step-icon"></i>
+                        <h4 data-i18n="how.s1.title">Me cont&aacute;s tu idea</h4>
+                        <p data-i18n="how.s1.desc">
+                            Por WhatsApp o formulario. Sin tecnicismos.
+                            Solo contame qu&eacute; necesit&aacute;s y qu&eacute; objetivo ten&eacute;s.
+                        </p>
+                    </div>
+                    <div class="step-connector"><i class="ph ph-arrow-right"></i></div>
+                    <div class="step-item">
+                        <div class="step-number">02</div>
+                        <i class="ph ph-paint-brush step-icon"></i>
+                        <h4 data-i18n="how.s2.title">Dise&ntilde;amos y desarrollamos</h4>
+                        <p data-i18n="how.s2.desc">
+                            Trabajamos en tiempo r&eacute;cord con revisiones incluidas
+                            hasta que quedes conforme.
+                        </p>
+                    </div>
+                    <div class="step-connector"><i class="ph ph-arrow-right"></i></div>
+                    <div class="step-item">
+                        <div class="step-number">03</div>
+                        <i class="ph ph-rocket-launch step-icon"></i>
+                        <h4 data-i18n="how.s3.title">Publicamos y empez&aacute;s a recibir clientes</h4>
+                        <p data-i18n="how.s3.desc">
+                            Tu sitio queda en l&iacute;nea y te ense&ntilde;o a manejarlo.
+                            El c&oacute;digo es tuyo para siempre.
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top:3rem;">
+                    <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20quiero%20empezar%20un%20proyecto"
+                       target="_blank" class="btn-whatsapp" data-i18n="how.cta">
+                        <i class="ph ph-whatsapp-logo"></i> Empecemos hoy
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="portfolio" class="section hidden-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="portfolio.title">
+                    Resultados <span class="accent">reales</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="portfolio.subtitle">
+                    Proyectos desplegados en producci&oacute;n &mdash; no demos, sitios reales con clientes reales.
+                </p>
+                <div class="grid-2 portfolio-grid">
+
+                    <a href="https://tiendalaura.netlify.app/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/sala-distribuciones.png" alt="Sala Distribuciones Web" loading="lazy">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Sala Distribuciones</h4>
+                            <p><span class="tag">B2B</span> <span data-i18n="p1.desc">Cat&aacute;logo mayorista online</span></p>
+                        </div>
+                    </a>
+
+                    <a href="https://premiumoptica.netlify.app/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/premium-optica.png" alt="Premium Optica Web" loading="lazy">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Premium &Oacute;ptica</h4>
+                            <p><span class="tag">E-commerce</span> <span data-i18n="p2.desc">Cat&aacute;logo &oacute;ptico con pedidos online</span></p>
+                        </div>
+                    </a>
+
+                    <a href="https://francktiendaholistica.netlify.app/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/tienda-holistica.png" alt="Tienda Holistica" loading="lazy">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Franck Tienda Hol&iacute;stica</h4>
+                            <p><span class="tag">E-commerce</span> <span data-i18n="p3.desc">Tienda con carrito a WhatsApp</span></p>
+                        </div>
+                    </a>
+
+                    <a href="https://transportenunez.netlify.app/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/transporte-nunez.png" alt="Transporte Nunez Web" loading="lazy">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Transporte Nu&ntilde;ez</h4>
+                            <p><span class="tag">Corporativo</span> <span data-i18n="p4.desc">Web institucional y captaci&oacute;n de clientes</span></p>
+                        </div>
+                    </a>
+
+                    <a href="https://opticascyolavalle.netlify.app/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/opticas-cyo.png" alt="Opticas C&amp;O Web" loading="lazy">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>&Oacute;pticas SC &amp; Olavalle</h4>
+                            <p><span class="tag">Landing</span> <span data-i18n="p5.desc">Sitio promocional y captaci&oacute;n local</span></p>
+                        </div>
+                    </a>
+
+                    <a href="https://franckterapiasholisticas.com/" target="_blank" class="project-card">
+                        <div class="project-image-container">
+                            <img src="img/franck-terapias.png" alt="Franck Terapias" loading="lazy" style="object-position:top center;">
+                            <div class="overlay"><i class="ph ph-arrow-square-out"></i> <span data-i18n="portfolio.view">Ver proyecto</span></div>
+                        </div>
+                        <div class="project-info">
+                            <h4>Franck Terapias</h4>
+                            <p><span class="tag">Marca Personal</span> <span data-i18n="p6.desc">Web de gesti&oacute;n de turnos para terapeutas</span></p>
+                        </div>
+                    </a>
+
+                </div>
+
+                <h3 class="category-title mt-large" data-i18n="portfolio.systems">Sistemas Internos (Web Apps)</h3>
+                <div class="grid-3 portfolio-grid">
+                    <div class="project-card locked">
+                        <div class="project-image system-bg">
+                            <i class="ph ph-brain"></i><span>Bioportal Pro</span>
+                        </div>
+                        <div class="project-info">
+                            <h4>Bioportal Pro</h4>
+                            <p><span class="tag" data-i18n="sys.exclusive">Exclusivo</span> <span data-i18n="sys1.desc">Ecosistema para terapeutas</span></p>
+                        </div>
+                    </div>
+                    <div class="project-card locked">
+                        <div class="project-image system-bg">
+                            <i class="ph ph-shopping-cart"></i><span data-i18n="sys2.name">Gesti&oacute;n de Compras</span>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-i18n="sys2.title">Sistema de Stock</h4>
+                            <p data-i18n="sys2.desc">Control de inventario y pedidos.</p>
+                        </div>
+                    </div>
+                    <div class="project-card locked">
+                        <div class="project-image system-bg">
+                            <i class="ph ph-shield-check"></i><span data-i18n="sys3.name">Control Matafuegos</span>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-i18n="sys3.title">Seguridad Industrial</h4>
+                            <p data-i18n="sys3.desc">Auditor&iacute;a de vencimientos y alertas.</p>
+                        </div>
+                    </div>
+                    <div class="project-card locked">
+                        <div class="project-image system-bg">
+                            <i class="ph ph-fork-knife"></i><span data-i18n="sys4.name">Pedidos Viandas</span>
+                        </div>
+                        <div class="project-info">
+                            <h4 data-i18n="sys4.title">Log&iacute;stica Gastron&oacute;mica</h4>
+                            <p data-i18n="sys4.desc">Gesti&oacute;n de pedidos diarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIOS -->
+        <section id="testimonios" class="section bg-alt hidden-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="testi.title">
+                    Lo que dicen <span class="accent">mis clientes</span>
+                </h2>
+                <p class="section-subtitle" data-i18n="testi.subtitle">Resultados reales de negocios reales.</p>
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text" data-i18n="t1.text">
+                            "Antes no ten&iacute;amos presencia online, nuestros clientes no nos encontraban.
+                            Ahora recibimos consultas todos los d&iacute;as."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <strong data-i18n="t1.name">Sandra M.</strong>
+                                <span data-i18n="t1.role">Sala Distribuciones</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text" data-i18n="t2.text">
+                            "El sitio qued&oacute; espectacular y lo entreg&oacute; en menos de una semana.
+                            Totalmente recomendable para cualquier negocio."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong data-i18n="t2.name">Roberto G.</strong>
+                                <span data-i18n="t2.role">Transporte Nu&ntilde;ez</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                        <p class="testimonial-text" data-i18n="t3.text">
+                            "Muy profesional y siempre disponible. Ahora mis clientes pueden
+                            encontrarme y reservar turnos sin llamar."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">F</div>
+                            <div>
+                                <strong data-i18n="t3.name">Florencia P.</strong>
+                                <span data-i18n="t3.role">Franck Terapias Hol&iacute;sticas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- VENTAJAS -->
+        <section id="ventajas" class="section hidden-section">
+            <div class="container">
+                <div class="advantages-wrapper">
+                    <div class="advantage-text">
+                        <h2 class="section-title" data-i18n="adv.title">
+                            Por qu&eacute; <span class="gradient-text">trabajar conmigo</span>
+                        </h2>
+                        <p data-i18n="adv.desc">
+                            No soy una agencia con costos de estructura. Soy un desarrollador
+                            especializado que trabaja directamente con vos para construir algo
+                            que realmente funcione.
+                        </p>
+                        <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20quiero%20hablar%20de%20mi%20proyecto"
+                           target="_blank" class="btn-text" data-i18n="adv.cta">
+                            Hablemos de tu proyecto <i class="ph ph-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="advantages-grid">
+                        <div class="adv-item">
+                            <i class="ph ph-rocket-launch"></i>
+                            <h4 data-i18n="adv.a1.title">Ultrarr&aacute;pido</h4>
+                            <p data-i18n="adv.a1.desc">HTML/CSS/JS puro. Sin plugins, sin lentitud.</p>
+                        </div>
+                        <div class="adv-item">
+                            <i class="ph ph-coins"></i>
+                            <h4 data-i18n="adv.a2.title">Sin costos fijos</h4>
+                            <p data-i18n="adv.a2.desc">No pag&aacute;s servidor mensual. El sitio es tuyo.</p>
+                        </div>
+                        <div class="adv-item">
+                            <i class="ph ph-handshake"></i>
+                            <h4 data-i18n="adv.a3.title">Trato directo</h4>
+                            <p data-i18n="adv.a3.desc">Habl&aacute;s directamente con el desarrollador.</p>
+                        </div>
+                        <div class="adv-item">
+                            <i class="ph ph-device-mobile"></i>
+                            <h4 data-i18n="adv.a4.title">Mobile First</h4>
+                            <p data-i18n="adv.a4.desc">Dise&ntilde;o adaptativo real y probado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section bg-alt hidden-section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="faq.title">
+                    Preguntas <span class="accent">frecuentes</span>
+                </h2>
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-i18n="faq.q1">&iquest;Cu&aacute;nto cuesta un sitio web?</button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a1">Los precios arrancan desde USD 150 para una landing b&aacute;sica.
+                            Cada proyecto es diferente y el precio final depende de lo que realmente necesit&aacute;s.
+                            Lo mejor es que me cuentes tu idea y te armo una propuesta a medida.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-i18n="faq.q2">&iquest;Necesito saber de tecnolog&iacute;a?</button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a2">Para nada. Solo ten&eacute;s que contarme qu&eacute; hac&eacute;s y qu&eacute; quer&eacute;s lograr.
+                            Yo me encargo de todo lo t&eacute;cnico.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-i18n="faq.q3">&iquest;El c&oacute;digo va a ser m&iacute;o?</button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a3">100% s&iacute;. Una vez que entregamos el proyecto, el c&oacute;digo es tuyo.
+                            Sin licencias, sin alquiler, sin dependencias hacia m&iacute;.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-i18n="faq.q4">&iquest;En cu&aacute;nto tiempo est&aacute; listo?</button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a4">Una landing b&aacute;sica puede estar en 3&ndash;7 d&iacute;as.
+                            Un sitio profesional en 7&ndash;15 d&iacute;as. Los proyectos avanzados tienen
+                            tiempos definidos seg&uacute;n el an&aacute;lisis del proyecto.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-i18n="faq.q5">&iquest;Qu&eacute; pasa despu&eacute;s de la entrega?</button>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a5">Te ense&ntilde;o a manejar tu sitio. Y si necesit&aacute;s cambios o
+                            seguir desarrollando a futuro, estoy disponible. No te dejamos en el aire.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section cta-section hidden-section">
+            <div class="container">
+                <h2 data-i18n="contact.title">
+                    &iquest;Listo para que tu negocio consiga
+                    <span class="gradient-text">m&aacute;s clientes?</span>
+                </h2>
+                <p data-i18n="contact.subtitle">Sin intermediarios. Habl&aacute;s directo con el desarrollador.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-wa-block">
+                        <a href="https://wa.me/5492615717954?text=Hola%20Franck%2C%20quiero%20informaci%C3%B3n%20sobre%20mis%20opciones"
+                           target="_blank" class="btn-whatsapp btn-whatsapp-large">
+                            <i class="ph ph-whatsapp-logo"></i>
+                            <div>
+                                <span data-i18n="contact.wa1">Escribirme ahora</span>
+                                <small data-i18n="contact.wa2">Respondo en menos de 24hs</small>
+                            </div>
+                        </a>
+                        <p class="contact-or" data-i18n="contact.or">&mdash; o complet&aacute; el formulario &mdash;</p>
+                    </div>
+
+                    <form class="contact-form" action="https://formspree.io/f/mnjodlyg" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-i18n="form.name">Tu nombre</label>
+                            <input type="text" id="name" name="name" required placeholder="Juan Garc&iacute;a">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="form.email">Tu email</label>
+                            <input type="email" id="email" name="email" required placeholder="juan@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="business" data-i18n="form.business">&iquest;A qu&eacute; se dedica tu negocio?</label>
+                            <input type="text" id="business" name="business" placeholder="Ej: Odontolog&iacute;a, Ropa, Transporte...">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="form.message">&iquest;Qu&eacute; necesit&aacute;s?</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Contame tu idea o proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit" data-i18n="form.submit">
+                            <i class="ph ph-paper-plane-tilt"></i> Enviar consulta
+                        </button>
+                        <p class="form-success hidden" id="form-success" data-i18n="form.success">
+                            &#10003; Mensaje enviado! Te respondo pronto.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Franck Soluciones Inform&aacute;ticas.</p>
+            <p data-i18n="footer.location" style="font-size: 0.8rem; margin-top: -0.5rem; opacity: 0.8;">Desde Mendoza, Argentina, para el mundo.</p>
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div id="chatbot-widget" class="chatbot-widget" aria-label="Chatbot de consultas">
+        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Abrir chat">
+            <i class="ph ph-chat-circle-dots" id="chatbot-icon-open"></i>
+            <i class="ph ph-x hidden" id="chatbot-icon-close"></i>
+        </button>
+        <div class="chatbot-box hidden" id="chatbot-box">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar"><img src="img/logo-franck.png" alt="Franck"></div>
+                <div>
+                    <strong>Franck.Dev</strong>
+                    <span class="chatbot-status">&#9679; <span data-i18n="chat.online">En l&iacute;nea</span></span>
+                </div>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages"></div>
+            <div class="chatbot-options" id="chatbot-options"></div>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button class="btn-back-top" id="btn-back-top" aria-label="Volver arriba">
+        <i class="ph ph-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
